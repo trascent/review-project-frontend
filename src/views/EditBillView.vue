@@ -83,7 +83,10 @@ export default defineComponent({
   },
   methods: {
     back: function () {
-      window.history.back();
+      this.$router.push({
+        name: "BillsList",
+        replace: true,
+      });
     },
     update: function () {
       // Hacer solicitud HTTP
