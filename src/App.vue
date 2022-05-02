@@ -24,10 +24,10 @@ export default defineComponent({
 @import "@/assets/base.css";
 
 .container {
-  width: 90vw;
+  width: 95vw;
 }
 #app {
-  max-width: 1280px;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
