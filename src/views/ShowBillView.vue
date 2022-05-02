@@ -43,7 +43,6 @@ export default defineComponent({
    * Obtiene los datos de la factura
    */
   created() {
-    console.log(this.$store.state.authenticationChecker.authentication)
     // Verificar si está logueado
     if(!this.$store.state.authenticationChecker.authentication){
       this.$router.push({

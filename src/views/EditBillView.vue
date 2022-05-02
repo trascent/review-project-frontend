@@ -44,7 +44,6 @@ export default defineComponent({
     };
   },
   created() {
-    console.log(this.$store.state.authenticationChecker.authentication)
     // Verificar si está logueado
     if(!this.$store.state.authenticationChecker.authentication){
       this.$router.push({
