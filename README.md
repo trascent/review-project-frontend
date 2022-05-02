@@ -6,7 +6,10 @@
 ## Instalación
 # review-project-frontend
 
-Desarrollado en Vue3 En Conjunto con Vite. UI de apoyo usando PrimeVue V3.12.6
+Desarrollado en Vue3 En Conjunto con Vite. UI de apoyo usando PrimeVue V3.12.6.
+Copiar .env.example en tu .env con la configuración de la url de la API.
+
+NOTA: No refrescar una vez autenticado, Vuex stores se reinicia al usar reloading. Usar el flujo de navegación de la aplicación.
 
 ## Recommended IDE Setup
 
