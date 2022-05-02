@@ -1,28 +1,7 @@
 <template>
-  <div>
-    <Toolbar>
-      <template #start>
-        <h1>Sistema de Registro de Facturas de Compra</h1>
-      </template>
-
-      <template #end>
-        <Button
-          label="Crear Factura"
-          icon="pi pi-fw pi-pencil"
-          class="p-button-success mr-2"
-        />
-        <Button
-          label="Cerrar Sesión"
-          icon="pi pi-fw pi-power-off"
-          class="p-button-danger"
-        />
-      </template>
-    </Toolbar>
+  <div class="container justify-content-center flex text-center">
+      <RouterView />
   </div>
-  <div>
-    <bills-view />
-  </div>
-  <RouterView />
 </template>
 <script lang="js">
 import { RouterView } from 'vue-router'
@@ -30,14 +9,10 @@ import Toolbar from 'primevue/toolbar';
 import Button from "primevue/button"; // Import the PrimeVue buttons.
 import "primeflex/primeflex.css"; // Import the PrimeVue layout utility library.
 import { defineComponent } from "vue";
-import BillsView from "@/views/BillsView.vue";
 export default defineComponent({
   name: "App",
   components: {
     RouterView,
-    Toolbar,
-    Button,
-    BillsView,
   },
   setup() {
 		return {
@@ -48,9 +23,8 @@ export default defineComponent({
 <style lang="scss">
 @import "@/assets/base.css";
 
-.p-toolbar {
+.container {
   width: 90vw;
-  margin: 0;
 }
 #app {
   max-width: 1280px;
