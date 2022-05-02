@@ -22,8 +22,6 @@ export default defineComponent({
     };
   },
   created(){
-    console.log(this.$store.state.authenticationChecker.authentication)
-    console.log(this.$store.state.authenticationChecker.token)
     // Verificar si está logueado
     if(!this.$store.state.authenticationChecker.authentication){
       this.$router.push({
@@ -38,8 +36,4 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
-.p-toolbar {
-  width: 90vw;
-  margin: 0;
-}
 </style>
