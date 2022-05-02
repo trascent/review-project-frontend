@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Toolbar>
+    <Toolbar class="toolbar-style">
       <template #start>
         <h1>Sistema de Registro de Facturas de Compra</h1>
       </template>
@@ -28,11 +28,9 @@
         />
       </template>
     </Toolbar>
-    <table-form></table-form>.
   </div>
 </template>
 <script lang="js">
-import TableForm from "../components/TableForm.vue";
 import Toolbar from 'primevue/toolbar';
 import Button from "primevue/button"; // Import the PrimeVue buttons.
 import "primeflex/primeflex.css"; // Import the PrimeVue layout utility library.
@@ -41,7 +39,6 @@ import axios from "axios";
 export default defineComponent({
   name: "BillsView",
   components: {
-    TableForm,
     Toolbar,
     Button,
   },
@@ -96,8 +93,8 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
-.p-toolbar {
-  width: 90vw;
+.toolbar-style {
+  width: 95vw;
   margin: 0;
 }
 </style>
