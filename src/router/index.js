@@ -3,6 +3,7 @@ import BillsView from "../views/BillsView.vue";
 import ShowBillView from "../views/ShowBillView.vue";
 import EditBillView from "../views/EditBillView.vue";
 import CreateBillView from "../views/CreateBillView.vue";
+import LoginPage from "../views/LoginPage.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,12 @@ const router = createRouter({
       path: "/bills/create",
       name: "CreateBill",
       component: CreateBillView,
+      props: true,
+    },
+    {
+      path: "/login",
+      name: "LoginPage",
+      component: LoginPage,
       props: true,
     },
   ],
